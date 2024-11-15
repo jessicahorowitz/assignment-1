@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Miley Cyrus</title>
-<style>
-</head>
-<body>
-  body {
-            font-family: Arial, sans-serif;
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Set the Google Font */
+        body {
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        /* Style tags h1 and p */
+        h1 {
             color: #333;
             text-align: center;
+            font-size: 2.5em;
         }
-        p, ol, ul {
+        p {
+            color: #555;
             margin: 20px;
             padding: 10px;
         }
+
         /* Navigation Grid Styling */
         .nav-grid {
             display: grid;
@@ -42,13 +50,41 @@
         .nav-item:hover {
             background-color: #0056b3;
         }
-        img {
-            display: block;
-            margin: 10px auto;
-            max-width: 100%;
-            height: auto;
+
+        /* Link styling */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Class styling */
+        .highlight {
+            color: #ff4081;
+            font-weight: bold;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            padding: 10px;
+        }
+
+        /* Grid Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
             border-radius: 8px;
         }
+
+        /* Footer Styling */
         footer {
             background-color: #f1f1f1;
             text-align: center;
@@ -60,43 +96,72 @@
     </style>
 </head>
 <body>
-  <h1>The Life and Career of Miley Cyrus</h1> 
-   <p>Born Destiny Hope Cyrus, now known as Miley Cyrus, is an American 
-    singer-songwriter born in 1992 from Franklin, Tennessee. Cyrus is known for her multifaceted 
-    career as a singer, songwriter and actress.</p>
-  <h2>Hannah Montana</h2>
-  <p>Miley Cyrus gained fame at a young age as the star of Disney 
-    Channel’s Hannah Montana from 2006-2011. She played the role of a teenage pop star leading a 
-    double life as an ordinary high school student. The role catapulted her into the spotlight and led to a 
-    successful music and acting career.</p>
-  <h3>Debut Music Career</h3>
-  <p>During her time as Hannah Montana, Miley released her debut album 
-    Meet Miley Cyrus in 2007. It was released as a companion to the Hannah Montana 2: Meet Miley Cyrus
-    album, which featured both Hannah Montana and Miley Cyrus tracks. The significance behind the 
-    album launched her transition from the Disney persona to a standalone artist</p>
-<h4>Bangerz Era</h4>
-<ol>
-  <li>Performance at the 2013 MTV Video Music Awards</li>
-  <li>Music video for Wrecking Ball</li>
-  <li>Controversial public statements and behavior</li>
-</ol>
-<h5>Returning to Her Roots</h5>
-<ul>
-  <li>2017 album Younger Now which marked her return to country and
-    pop music, characterizing herself as reflective and mature.</li>
-  <li>
-    Exploration of new music styles. In 2020 Cyrus’s album Plastic 
-    Hearts embraced rock and punk, proving her versatility as an artist
-    and performer.</li>
-  <li>at the 2024 Grammys, Miley won her first ever Grammy for her 
-    song “Flowers”</li>
-</ul>
-<h6>Gallery</h6>
-<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDKEee62Lk2W65ftyvtCr_j6WYSBJSs9LLjwKdTHPvsWoye9ktR-u-mX0CqM_Uo80pIcEy">
-<img src="https://images.hellomagazine.com/horizon/original_aspect_ratio/e8ad9487eb4d-miley-cyrus-bangerz-era.jpg">
-<img src="https://i8.amplience.net/i/naras/Miley_cyrus_2024_GRAMMYs_GettyImages_1986395270">
-<footer>Jessica Horowitz is a senior at the University of Miami. She is studying studio
-  art and creative advertising. She is from Boca Raton, Florida and currently resides in Miami, Florida. 
-  She is a student in the University’s Web Lab class.</footer>
+
+    <h1>The Life and Career of Miley Cyrus</h1> 
+
+    <!-- Navigation Grid -->
+    <nav class="nav-grid">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#hannah-montana" class="nav-item">Hannah Montana</a>
+        <a href="#debut-music-career" class="nav-item">Debut Music Career</a>
+        <a href="#bangerz-era" class="nav-item">Bangerz Era</a>
+        <a href="#returning-to-roots" class="nav-item">Returning to Her Roots</a>
+        <a href="#gallery" class="nav-item">Gallery</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="about">
+        <p class="highlight">Born Destiny Hope Cyrus, now known as Miley Cyrus, is an American 
+        singer-songwriter born in 1992 from Franklin, Tennessee. Cyrus is known for her multifaceted 
+        career as a singer, songwriter, and actress.</p>
+    </section>
+
+    <section id="hannah-montana">
+        <h2>Hannah Montana</h2>
+        <p class="note">Miley Cyrus gained fame at a young age as the star of Disney 
+        Channel’s <span class="highlight">Hannah Montana</span> from 2006-2011. She played the role of a teenage pop star leading a 
+        double life as an ordinary high school student. The role catapulted her into the spotlight and led to a 
+        successful music and acting career.</p>
+    </section>
+
+    <section id="debut-music-career">
+        <h3>Debut Music Career</h3>
+        <p>During her time as <span class="highlight">Hannah Montana</span>, Miley released her debut album 
+        <em>Meet Miley Cyrus</em> in 2007. It was released as a companion to the Hannah Montana 2: Meet Miley Cyrus
+        album, which featured both Hannah Montana and Miley Cyrus tracks. The album launched her transition from the Disney persona to a standalone artist.</p>
+    </section>
+
+    <section id="bangerz-era">
+        <h4>Bangerz Era</h4>
+        <ol>
+            <li>Performance at the 2013 MTV Video Music Awards</li>
+            <li>Music video for <em>Wrecking Ball</em></li>
+            <li>Controversial public statements and behavior</li>
+        </ol>
+    </section>
+
+    <section id="returning-to-roots">
+        <h5>Returning to Her Roots</h5>
+        <ul>
+            <li>2017 album <em>Younger Now</em>, marking her return to country and pop music.</li>
+            <li>2020 album <em>Plastic Hearts</em>, embracing rock and punk.</li>
+            <li>In 2024, Miley won her first Grammy for her song “Flowers”.</li>
+        </ul>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery">
+        <h6>Gallery</h6>
+        <div class="gallery">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDKEee62Lk2W65ftyvtCr_j6WYSBJSs9LLjwKdTHPvsWoye9ktR-u-mX0CqM_Uo80pIcEy" alt="Miley Cyrus Image 1">
+            <img src="https://images.hellomagazine.com/horizon/original_aspect_ratio/e8ad9487eb4d-miley-cyrus-bangerz-era.jpg" alt="Miley Cyrus Bangerz Era">
+            <img src="https://i8.amplience.net/i/naras/Miley_cyrus_2024_GRAMMYs_GettyImages_1986395270" alt="Miley Cyrus at the 2024 Grammys">
+        </div>
+    </section>
+
+    <footer>
+        <p>Jessica Horowitz is a senior at the University of Miami, studying studio art and creative advertising.</p>
+    </footer>
+
 </body>
 </html>
